@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+.container {
+  width: 120rem;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heroBackground {
+  padding: 8rem 0 4rem 0;
+  /* margin-bottom: 10rem; */
+  background: rgb(223, 253, 255);
+  background: linear-gradient(
+    85deg,
+    rgba(223, 253, 255, 1) 0%,
+    rgba(241, 224, 255, 1) 60%,
+    rgba(225, 225, 228, 1) 100%
+  );
+  height: fit-content;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero{
+  margin-top: 8rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.App {
+}
+
+.nav {
+  padding: 2rem 0;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.nav {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.plans{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 4rem 0;
+  gap: 6rem;
+  flex-direction: column;
+  padding-top: 10rem;
+  padding-bottom: 12rem;
+  text-align: center;
+  /* background-color: #fff; */
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 
-.App-link {
-  color: #61dafb;
+.plansInner{
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 5rem;
+}
+.plans>h2{
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.faq{
+  background-color: #fff;
+  padding: 12rem 0;
 }
