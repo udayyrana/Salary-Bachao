@@ -13,7 +13,7 @@ function Faq() {
 
       <AccordianComp
         heading={"What is salarybachao"}
-        content={contentArray[0]}
+        content={contentArray[0]} 
       />
       <AccordianComp
         heading={"What is salarybachao"}
